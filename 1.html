@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type Of Cars</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background-color: #2c3e50;
+      padding: 15px;
+    }
+
+    .container a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .container a:hover {
+      color: #1abc9c;
+    }
+
+    .images {
+      display: grid;
+      margin: 60px auto;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1000px;
+      gap: 15px;
+    }
+
+    .images img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px auto;
+      max-width: 900px;
+      flex-wrap: wrap;
+    }
+
+    .content > div {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .content > div:hover {
+      transform: translateY(-5px);
+    }
+
+    .content h1 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 25px;
+      background: #1abc9c;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #16a085;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width:1024px) {
+      .images {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width:600px) {
+      .images {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <a href="https://www.google.com" target="_blank">Home</a>
+      <a href="https://www.google.com" target="_blank">About Us</a>
+      <a href="https://www.google.com" target="_blank">Services</a>
+      <a href="https://www.google.com" target="_blank">Blog</a>
+    </div>
+
+    <div class="images">
+      <img src="./f27146c5-0c7d-4a21-9a59-0bb54a89f372.jpeg" alt="">
+      <img src="./Range Rover - New.jpeg" alt="">
+      <img src="./f27146c5-0c7d-4a21-9a59-0bb54a89f372.jpeg" alt="">
+      <img src="./Range Rover - New.jpeg" alt="">
+      <img src="./f27146c5-0c7d-4a21-9a59-0bb54a89f372.jpeg" alt="">
+      <img src="./Range Rover - New.jpeg" alt="">
+    </div>
+
+    <div class="content">
+      <div>
+        <h1>SEDANS</h1>
+        <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+        <a href="https://www.google.com" target="_blank"><button>Learn More</button></a>
+      </div>
+      <div>
+        <h1>SUVS</h1>
+        <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+        <a href="https://www.google.com" target="_blank"><button>Learn More</button></a>
+      </div>
+      <div>
+        <h1>LUXURY</h1>
+        <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+        <a href="https://www.google.com" target="_blank"><button>Learn More</button></a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Contact info</p>
+      <p>Email: nada@gmail.com | Phone: +201234567</p>
+    </footer>
+  </main>
+</body>
+</html>
